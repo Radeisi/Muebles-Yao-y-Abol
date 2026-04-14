@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Muebles Yao Y abol</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #f5f5f5;
+        }
+
+        header {
+            background: #2f3640;
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        nav {
+            background: #353b48;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #f5f6fa;
+            margin: 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .hero {
+            background: url('https://images.unsplash.com/photo-1618221195710-dd6b41faaea6') no-repeat center/cover;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        .hero h1 {
+            font-size: 40px;
+        }
+
+        section {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .servicios {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            width: 250px;
+            box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .card h3 {
+            color: #2f3640;
+        }
+
+        footer {
+            background: #2f3640;
+            color: white;
+            padding: 20px;
+        }
+
+        button {
+            background: #c7a17a;
+            color: white;
+            border: none;
+            padding: 15px 25px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Muebles Yao Y abol</h1>
+    <p>Estructura, diseño y acabado con estándares profesionales.</p>
+</header>
+
+<nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#servicios">Servicios</a>
+    <a href="#proyectos">Proyectos</a>
+    <a href="#contacto">Contacto</a>
+</nav>
+
+<div class="hero">
+    <h1>Diseño moderno y elegante</h1>
+    <p>Hogares, oficinas y espacios comerciales</p>
+</div>
+
+<section id="inicio">
+    <h2>Sobre Nosotros</h2>
+    <p>Nos especializamos en carpintería, tapicería y restauración, desarrollando espacios modernos, funcionales y adaptados a cada necesidad.</p>
+</section>
+
+<section id="servicios">
+    <h2>Nuestros Servicios</h2>
+
+    <div class="servicios">
+        <div class="card">
+            <h3>🏠 Diseño Residencial</h3>
+            <p>Transformamos tu hogar con estilo y comodidad.</p>
+        </div>
+
+        <div class="card">
+            <h3>🏢 Diseño Comercial</h3>
+            <p>Espacios que impactan a tus clientes.</p>
+        </div>
+
+        <div class="card">
+            <h3>🛋️ Decoración</h3>
+            <p>Selección de muebles, colores y accesorios.</p>
+        </div>
+
+        <div class="card">
+            <h3>📐 Remodelaciones</h3>
+            <p>Renovamos espacios existentes.</p>
+        </div>
+    </div>
+</section>
+
+<section id="proyectos">
+    <h2>Proyectos Recientes</h2>
+    <p>Próximamente podrás ver nuestros trabajos aquí.</p>
+</section>
+
+<section id="contacto">
+    <h2>Contáctanos</h2>
+    <p>Teléfono: 8293319722</p>
+    <p>Email: Radeisisuarez@gmail.com</p>
+
+    <button onclick="contactar()">Escríbenos por WhatsApp</button>
+</section>
+
+<footer>
+    <p>© Muebles yao y adol</p>
+</footer>
+
+<script>
+function contactar() {
+    window.open("https://wa.me/18490000000", "_blank");
+}
+</script>
+
+</body>
+</html>
