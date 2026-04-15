@@ -2,216 +2,128 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
-<title>Muebles yao y adol</title>
+<title>Muebles Yao y Abol</title>
 
 <style>
 body {
     margin: 0;
-    font-family: Arial;
+    font-family: Arial, sans-serif;
 }
 
-/* HEADER */
-header {
-    background: #1e272e;
-    color: white;
+/* NAVBAR */
+nav {
+    background: #111;
+    padding: 15px;
     text-align: center;
-    padding: 40px;
 }
 
-/* HERO */
-.hero {
-    background: url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c') no-repeat center/cover;
+nav a {
     color: white;
-    text-align: center;
-    padding: 120px 20px;
+    margin: 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* BOTONES */
+.botones {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: 40px 0;
+}
+
+.botones a {
+    padding: 12px 20px;
+    background: black;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
 }
 
 /* SECCIONES */
 section {
-    padding: 50px;
+    padding: 60px 20px;
     text-align: center;
 }
 
-/* SERVICIOS */
-.servicios {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-}
-.card {
-    background: #f1f2f6;
-    padding: 20px;
-    border-radius: 10px;
-    width: 250px;
-}
-
-/* GALERÍA */
 .galeria {
     display: flex;
     flex-wrap: wrap;
-    gap: 15px;
     justify-content: center;
-}
-.galeria img {
-    width: 300px;
-    border-radius: 10px;
+    gap: 20px;
 }
 
-/* BOTÓN WHATSAPP */
-.whatsapp {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background: #25D366;
-    color: white;
-    padding: 15px;
-    border-radius: 50%;
-    font-size: 20px;
-    text-decoration: none;
+.galeria img {
+    width: 250px;
+    border-radius: 10px;
 }
 
 /* FOOTER */
 footer {
-    background: #1e272e;
+    background: #111;
     color: white;
-    padding: 20px;
+    text-align: center;
+    padding: 15px;
 }
 </style>
 </head>
 
 <body>
 
-<header>
-    <h1>Muebles yao y adol</h1>
-    <p>Diseño moderno y elegante</p>
-</header>
+<!-- MENÚ -->
+<nav>
+    <a href="#">Inicio</a>
+    <a href="#fabricacion">Fabricación</a>
+    <a href="#decoracion">Decoración</a>
+    <a href="#remodelacion">Remodelación</a>
+    <a href="#comercial">Diseño Comercial</a>
+</nav>
 
-<div class="hero">
-    <h1>Transformamos tus espacios</h1>
+<!-- BOTONES -->
+<div class="botones">
+    <a href="#fabricacion">Fabricación</a>
+    <a href="#decoracion">Decoración</a>
+    <a href="#remodelacion">Remodelación</a>
+    <a href="#comercial">Diseño Comercial</a>
 </div>
 
-<div style="
-display:flex;
-justify-content:center;
-flex-wrap:wrap;
-gap:15px;
-margin:40px 0;
-">
-
-<a href="#fabricacion Y restauración de muebles" style="padding:12px 20px; background:#222; color:white; border-radius:8px; text-decoration:none;">fabricacion Y restauración de muebles</a>
-
-<a href="#decoracion" style="padding:12px 20px; background:#222; color:white; border-radius:8px; text-decoration:none;">Decoración</a>
-
-<a href="#remodelacion" style="padding:12px 20px; background:#222; color:white; border-radius:8px; text-decoration:none;">Remodelación</a>
-
-<a href="#comercial" style="padding:12px 20px; background:#222; color:white; border-radius:8px; text-decoration:none;">Diseño Comercial</a>
-
-</div>
-
-
-<section>
-    <h2>Contacto</h2>
-    <p>📞 8293319722</p>
-    <p>📧 Radeisisuarez@gmail.com</p>
-
-    <a href="tel:8293319722">Llamar ahora</a>
-</section>
-
-<a class="whatsapp" href="https://wa.me/18490000000">💬</a>
-
-<!-- GALERÍA -->
-<section id="galeria" style="padding:40px; text-align:center;">
-    <h2>Nuestros Trabajos</h2>
-
-    <div style="
-        display:grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        gap:15px;
-        margin-top:20px;
-    ">
-
-        <img src="z1.jpeg" style="width:100%; border-radius:10px;">
-        <img src="z2.jpeg" style="width:100%; border-radius:10px;">
-        <img src="z3.jpeg" style="width:100%; border-radius:10px;">
-        <img src="z6.jpeg" style="width:250px; margin:10px;">
-        <img src="f15.jpeg" style="width:250px; margin:10px;">
-
+<!-- FABRICACIÓN -->
+<section id="fabricacion">
+    <h2>Fabricación y Restauración</h2>
+    <div class="galeria">
+        <img src="sala1.jpg">
+        <img src="restauracion1.jpg">
     </div>
-<section id="fabricacion Y restauración de muebles" style="padding:60px 20px; text-align:center;">
-<h2>fabricacion Y restauración de muebles</h2>
-
-<div style="
-display:flex;
-flex-wrap:wrap;
-justify-content:center;
-gap:20px;
-margin-top:20px;
-">
-
-   <img src="z7.jpeg" style="width:250px; border-radius:10px;">
-   <img src="f12.jpeg" style="width:250px; border-radius:10px;">
-   <img src="f14.jpeg" style="width:250px; border-radius:10px;"> 
-   <img src="f21.jpeg" style="width:250px; border-radius:10px;"> 
-
-</div>
 </section>
 
-<section id="decoracion" style="padding:60px 20px; text-align:center;">
-<h2>Decoracion</h2>
-
-<div style="
-display:flex;
-flex-wrap:wrap;
-justify-content:center;
-gap:20px;
-margin-top:20px;
-">
-
-<img src="z5.jpeg" style="width:250px; border-radius:10px;">
-<img src="z9.jpeg" style="width:250px; border-radius:10px;">
-<img src="D13.jpeg" style="width:250px; border-radius:10px;">
-
-</div>
+<!-- DECORACIÓN -->
+<section id="decoracion">
+    <h2>Decoración</h2>
+    <div class="galeria">
+        <img src="decoracion1.jpg">
+    </div>
 </section>
 
- <section id="remodelacion" style="padding:60px 20px; text-align:center;">
-<h2>Remodelacion</h2>
-
-<div style="
-display:flex;
-flex-wrap:wrap;
-justify-content:center;
-gap:20px;
-margin-top:20px;
-">
-
-<img src="f17.jpeg" style="width:250px; border-radius:10px;">
-<img src="D20.jpeg" style="width:250px; border-radius:10px;">
-
-</div>
+<!-- REMODELACIÓN -->
+<section id="remodelacion">
+    <h2>Remodelación</h2>
+    <div class="galeria">
+        <img src="remodelacion1.jpg">
+    </div>
 </section>
 
+<!-- DISEÑO COMERCIAL -->
+<section id="comercial">
+    <h2>Diseño Comercial</h2>
+    <div class="galeria">
+        <img src="comercial1.jpg">
+    </div>
 </section>
- <section id="diseño comercial" style="padding:60px 20px; text-align:center;">
-<h2>Diseño comercial</h2>
 
-<div style="
-display:flex;
-flex-wrap:wrap;
-justify-content:center;
-gap:20px;
-margin-top:20px;
-">
-
-<img src="19.jpeg" style="width:250px; border-radius:10px;">
-<img src="18.jpeg" style="width:250px; border-radius:10px;">
-
-</div>
-</section> 
-     
+<!-- FOOTER -->
 <footer>
-    <p>© Muebles yao y adol</p>
+    <p>© 2026 Muebles Yao y Abol</p>
 </footer>
 
 </body>
