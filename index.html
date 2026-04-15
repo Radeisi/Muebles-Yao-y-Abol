@@ -2,76 +2,163 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
-<title>Muebles Yao y Abol</title>
+<title>Muebles yao y adol</title>
 
 <style>
 body {
-    font-family: Arial;
     margin: 0;
-    background: #f5f5f5;
+    font-family: Arial;
 }
 
-/* MENÚ */
-nav {
-    background: #222;
-    padding: 15px;
+/* HEADER */
+header {
+    background: #1e272e;
+    color: white;
+    text-align: center;
+    padding: 40px;
+}
+
+/* HERO */
+.hero {
+    background: url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c') no-repeat center/cover;
+    color: white;
+    text-align: center;
+    padding: 120px 20px;
+}
+
+/* SECCIONES */
+section {
+    padding: 50px;
     text-align: center;
 }
 
-nav a {
-    color: white;
-    margin: 15px;
-    text-decoration: none;
-    font-weight: bold;
+/* SERVICIOS */
+.servicios {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+.card {
+    background: #f1f2f6;
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
 }
 
 /* GALERÍA */
 .galeria {
-    padding: 40px;
-    text-align: center;
-}
-
-.galeria h2 {
-    margin-bottom: 20px;
-}
-
-.grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    display: flex;
+    flex-wrap: wrap;
     gap: 15px;
+    justify-content: center;
 }
-
-.grid img {
-    width: 100%;
+.galeria img {
+    width: 300px;
     border-radius: 10px;
-    transition: transform 0.3s;
 }
 
-.grid img:hover {
-    transform: scale(1.05);
+/* BOTÓN WHATSAPP */
+.whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25D366;
+    color: white;
+    padding: 15px;
+    border-radius: 50%;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+/* FOOTER */
+footer {
+    background: #1e272e;
+    color: white;
+    padding: 20px;
 }
 </style>
 </head>
 
 <body>
 
-<!-- MENÚ -->
-<nav>
-    <a href="#">Inicio</a>
-    <a href="#galeria">Galería</a>
-    <a href="#">Contacto</a>
-</nav>
+<header>
+    <h1>Muebles yao y adol</h1>
+    <p>Diseño moderno y elegante</p>
+</header>
 
-<!-- GALERÍA -->
-<section id="galeria" class="galeria">
-    <h2>Nuestros Trabajos</h2>
+<div class="hero">
+    <h1>Transformamos tus espacios</h1>
+</div>
 
-    <div class="grid">
-        <img src="sala1.jpg">
-        <img src="cocina1.jpg">
-        <img src="restauracion1.jpg">
+<section>
+    <h2>Servicios</h2>
+    <div class="servicios">
+        <div class="card">Fabricación y restauración de muebles</div>
+        <div class="card">Decoración</div>
+        <div class="card">Remodelación</div>
+        <div class="card">Diseño Comercial</div>
     </div>
 </section>
+
+<section>
+    <h2>Proyectos</h2>
+    <div class="galeria">
+        <img src="z1.jpeg">
+       <img src="z2.jpeg">
+       <img src="z3.jpeg">
+        <img src="z4.jpeg">
+        <img src="z5.jpeg">
+        <img src="z6.jpeg">
+        <img src="z7.jpeg">
+        <img src="z8.jpeg">
+        <img src="z9.jpeg">
+        <img src="z10.jpeg">
+        <img src="11.jpeg">
+        <img src="12.jpeg">
+        <img src="13.jpeg">
+        <img src="14.jpeg">
+        <img src="15.jpeg">
+        <img src="16.jpeg">
+        <img src="17.jpeg">
+        <img src="18.jpeg">
+        <img src="19.jpeg">
+        <img src="20.jpeg">
+        <img src="21.jpeg">
+  </div>
+</section>
+
+<section>
+    <h2>Contacto</h2>
+    <p>📞 8293319722</p>
+    <p>📧 Radeisisuarez@gmail.com</p>
+
+    <a href="tel:8293319722">Llamar ahora</a>
+</section>
+
+<a class="whatsapp" href="https://wa.me/18490000000">💬</a>
+
+<!-- GALERÍA -->
+<section id="galeria" style="padding:40px; text-align:center;">
+    <h2>Nuestros Trabajos</h2>
+
+    <div style="
+        display:grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap:15px;
+        margin-top:20px;
+    ">
+
+        <img src="sala1.jpg" style="width:100%; border-radius:10px;">
+        <img src="cocina1.jpg" style="width:100%; border-radius:10px;">
+        <img src="restauracion1.jpg" style="width:100%; border-radius:10px;">
+
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Euri Interior Design</p>
+</footer>
 
 </body>
 </html>
